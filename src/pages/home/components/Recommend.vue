@@ -27,25 +27,25 @@ export default {
           desc: '将壮观诠释到完美，将梦想传递给世界'
         },
         {
-          id: '0001',
+          id: '0002',
           imgUrl: 'https://imgs.qunarzz.com/p/tts4/1412/53/5341eaedd0573f07cdb.jpg_180x120_2deb0840.jpg',
           title: '大连香洲旅游度假区',
           desc: '将壮观诠释到完美，将梦想传递给世界'
         },
         {
-          id: '0001',
+          id: '0003',
           imgUrl: 'https://imgs.qunarzz.com/p/tts4/1412/53/5341eaedd0573f07cdb.jpg_180x120_2deb0840.jpg',
           title: '大连香洲旅游度假区',
           desc: '将壮观诠释到完美，将梦想传递给世界'
         },
         {
-          id: '0001',
+          id: '0004',
           imgUrl: 'https://imgs.qunarzz.com/p/tts4/1412/53/5341eaedd0573f07cdb.jpg_180x120_2deb0840.jpg',
           title: '大连香洲旅游度假区',
           desc: '将壮观诠释到完美，将梦想传递给世界'
         },
         {
-          id: '0001',
+          id: '0005',
           imgUrl: 'https://imgs.qunarzz.com/p/tts4/1412/53/5341eaedd0573f07cdb.jpg_180x120_2deb0840.jpg',
           title: '大连香洲旅游度假区',
           desc: '将壮观诠释到完美，将梦想传递给世界'
