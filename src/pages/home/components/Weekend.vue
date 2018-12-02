@@ -2,7 +2,7 @@
   <div>
     <div class="title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for="list of commendLists" :key="list.id">
+      <li class="item border-bottom" v-for="list of weekendList" :key="list.id">
         <div class="item-img-content">
           <img class="item-img" :src="list.imgUrl">
         </div>
@@ -18,29 +18,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      commendLists: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg',
-          title: '大连香洲旅游度假区',
-          desc: '将壮观诠释到完美，将梦想传递给世界'
-        },
-        {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg',
-          title: '大连香洲旅游度假区',
-          desc: '将壮观诠释到完美，将梦想传递给世界'
-        },
-        {
-          id: '0003',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg',
-          title: '大连香洲旅游度假区',
-          desc: '将壮观诠释到完美，将梦想传递给世界'
-        }
-      ]
-    }
+  props: {
+    weekendList: Array
   }
 }
 </script>
@@ -53,7 +32,6 @@ export default {
     line-height: 0.8rem
     background: #eee
     text-indent: 0.2rem
-    margin-top: 0.2rem
   .item-img-content
     overflow: hidden
     height: 0

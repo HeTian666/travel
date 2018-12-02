@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="list of commendLists" :key="list.id">
+      <li class="item border-bottom" v-for="list of recommendList" :key="list.id">
         <img class="item-img" :src="list.imgUrl">
         <div class="item-info">
           <p class="item-title">{{ list.title }}</p>
@@ -17,41 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      commendLists: [
-        {
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/p/tts4/1412/53/5341eaedd0573f07cdb.jpg_180x120_2deb0840.jpg',
-          title: '大连香洲旅游度假区',
-          desc: '将壮观诠释到完美，将梦想传递给世界'
-        },
-        {
-          id: '0002',
-          imgUrl: 'https://imgs.qunarzz.com/p/tts4/1412/53/5341eaedd0573f07cdb.jpg_180x120_2deb0840.jpg',
-          title: '大连香洲旅游度假区',
-          desc: '将壮观诠释到完美，将梦想传递给世界'
-        },
-        {
-          id: '0003',
-          imgUrl: 'https://imgs.qunarzz.com/p/tts4/1412/53/5341eaedd0573f07cdb.jpg_180x120_2deb0840.jpg',
-          title: '大连香洲旅游度假区',
-          desc: '将壮观诠释到完美，将梦想传递给世界'
-        },
-        {
-          id: '0004',
-          imgUrl: 'https://imgs.qunarzz.com/p/tts4/1412/53/5341eaedd0573f07cdb.jpg_180x120_2deb0840.jpg',
-          title: '大连香洲旅游度假区',
-          desc: '将壮观诠释到完美，将梦想传递给世界'
-        },
-        {
-          id: '0005',
-          imgUrl: 'https://imgs.qunarzz.com/p/tts4/1412/53/5341eaedd0573f07cdb.jpg_180x120_2deb0840.jpg',
-          title: '大连香洲旅游度假区',
-          desc: '将壮观诠释到完美，将梦想传递给世界'
-        }
-      ]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
