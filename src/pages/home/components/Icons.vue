@@ -88,6 +88,7 @@ export default {
 
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
+  @import '~styles/varibles.styl'
   .waper >>> .swiper-container
     width:100%
     height: 0
@@ -119,4 +120,5 @@ export default {
       line-height 0.44rem
       text-align: center
       color: $darkTextColor
+      ellipsis()
 </style>
