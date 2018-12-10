@@ -21,7 +21,8 @@ export default {
   data () {
     return {
       touchStatus: false,
-      startY: 0
+      startY: 0,
+      timers: null
     }
   },
   computed: {
@@ -45,11 +46,16 @@ export default {
     },
     handelTouchMove (e) {
       if (this.touchStatus) {
-        const touchY = e.touches[0].clientY - 79
-        const index = Math.floor((touchY - this.startY) / 20)
-        if (index >= 0 && index < this.letters.length) {
-          this.$emit('change', this.letters[index])
+        if (this.timers) {
+          clearTimeout(this.timers)
         }
+        this.timers = setTimeout(() => {
+          const touchY = e.touches[0].clientY - 79
+          const index = Math.floor((touchY - this.startY) / 20)
+          if (index >= 0 && index < this.letters.length) {
+            this.$emit('change', this.letters[index])
+          }
+        }, 16)
       }
     },
     handelTouchEnd () {
