@@ -8,7 +8,7 @@
         <li class="search-item border-bottom" v-for="item of list" :key="item.id">
           {{ item.name }}
         </li>
-        <li class="search-item border-bottom" v-show="hasNoData">没有找到匹配的城市</li>
+        <li class="search-item border-bottom" v-show="hasNoData">暂无匹配到相关城市</li>
       </ul>
     </div>
   </div>
@@ -49,7 +49,7 @@ export default {
         const result = []
         for (let i in this.cities) {
           this.cities[i].forEach((value) => {
-            if (value.spell.indexOf(this.keyword) > -1 || value.name.indexOf(this.value) > -1) {
+            if (value.spell.indexOf(this.keyword) > -1 || value.name.indexOf(this.keyword) > -1) {
               result.push(value)
             }
           })
